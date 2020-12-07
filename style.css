@@ -1,0 +1,252 @@
+body {
+	margin: 0;
+	font-family: 'M PLUS 1p', sans-serif;
+	/*font-family: 'M PLUS Rounded 1c', sans-serif;*/
+	font-size: 18px;
+	color: #171739;
+	line-height: 25px;
+	-webkit-font-smoothing: antialiased;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+.testimoinals {
+	background: #E5E5E5;
+    padding: 80px 0;
+}
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.title {
+	margin: 0 auto;
+	width: 926px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-size: 55px;
+	font-weight: 900;
+	text-align: center;
+	line-height: 65px;
+}
+.slider {
+	margin-top: 50px;
+	display: block;
+	
+	
+}
+.slider_item {
+	width: 33.3333%;
+	padding-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.slider_item:last-child {
+	padding-right: 0;
+}
+.audio {
+	width: 321px;
+	height: 316px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	
+
+}
+.sound_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 321px;
+	height: 316px;
+	fill: none;
+
+
+}
+.audio_btn {
+	z-index: 999;
+	border-radius: 50%;
+
+}
+.audio_btn:hover {
+	cursor: pointer;
+	animation: pulse 2s infinite;
+}
+.item_img {
+	width: 321px;
+	position: relative;
+	margin-bottom: 50px;
+}
+.item_img_inner {
+	width: 70px;
+	height: 70px;
+	margin-left: 50%;
+	transform: translateX(-25%) translateY(-70px);
+	position: absolute;
+	border-radius: 50%;
+	border: 1px solid #79B7EA;
+
+}
+
+.time_here {
+	text-align: center;
+}
+.item_name {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-weight: 900;
+	font-size: 31px;
+	text-align: center;
+	margin: 25px 0;
+	line-height: 45px;
+
+}
+.item_text p {
+	margin-bottom: 25px;
+}
+.slick-arrow {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #79B7EA;
+	color: transparent;
+	font-size: 0;
+	border-radius: 50%;
+	background-image: url("img/arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+}
+.slick-arrow:hover {
+animation: pulse 2s infinite;
+}
+.slick-next {
+	right: 0;
+}
+.slick-prev {
+	left: -30px;
+	transform: rotate(180deg);
+}
+
+/*========================animation======================*/
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(128,193,248, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(128,193,248, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(128,193,248, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(128,193,248, 0.4);
+    box-shadow: 0 0 0 0 rgba(128,193,248, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(128,193,248, 0);
+      box-shadow: 0 0 0 10px rgba(128,193,248, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(128,193,248, 0);
+      box-shadow: 0 0 0 0 rgba(128,193,248, 0);
+  }
+}
+
+/*==============madia===============================*/
+@media (min-width: 1441px) {
+	
+.testimoinals {
+	
+	background-image: url("img/bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.item_name {
+	font-size: 35px;
+	font-weight: 45px;
+
+}
+.slider_item {
+	margin-right: 50px;
+
+}
+.slider_item:last-child {
+	margin-right: 0px;
+}
+.slick-arrow {
+	width: 70px;
+	height: 70px;
+	background-size: 20%;
+}
+.slick-prev {
+	left: -100px;
+	}
+}
+@media (max-width: 900px) {
+.title {
+	width: 552px;
+}
+}
+@media (max-width: 769px) {
+.title {
+	width: 552px;
+	font-size: 35px;
+	line-height: 45px;
+}
+.slider_item {
+	width: 50%;
+	overflow: hidden;
+}
+.item_name {
+	font-size: 25px;
+}
+.item_img_inner {
+	transform: translateX(-50%) translateY(-70px);
+}
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slick-dots li {
+	list-style: none;
+}
+.slick-dots li.slick-active button{
+	background-color: #7CBCF3;
+}
+
+.slick-dots button {
+	font-size: 0;
+	height: 2px;
+	border: none;
+	width: 113px;
+	background-color: #C3DCF4;
+	margin: 0;
+	padding: 0;
+}
+}
+@media (max-width: 376px) {
+	.title {
+	width: 345px;
+	font-size: 30px;
+	line-height: 40px;
+}
+.slider_item {
+	width: 100%;
+}
+	.slick-dots button {
+	width: 50px;
+}
+}
